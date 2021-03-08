@@ -8,12 +8,12 @@ import ILCatAnak from './cat-doctor-anak.svg';
 import ILHospitalBG from './hospital-background.png';
 
 export {
-    ILLogo, 
-    ILGetStarted, 
-    ILNullPhoto,
-    ILCatUmum,
-    ILCatPsikiater,
-    ILCatObat,
-    ILCatAnak,
-    ILHospitalBG,
+  ILLogo,
+  ILGetStarted,
+  ILNullPhoto,
+  ILCatUmum,
+  ILCatPsikiater,
+  ILCatObat,
+  ILCatAnak,
+  ILHospitalBG,
 };

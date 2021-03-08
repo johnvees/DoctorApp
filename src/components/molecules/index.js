@@ -8,12 +8,12 @@ import ListDoctor from './ListDoctor';
 import ListHospital from './ListHospital';
 
 export {
-    Header, 
-    BottomNavigator, 
-    HomeProfile, 
-    DoctorCategory, 
-    RatedDoctor, 
-    NewsItem,
-    ListDoctor,
-    ListHospital,
+  Header,
+  BottomNavigator,
+  HomeProfile,
+  DoctorCategory,
+  RatedDoctor,
+  NewsItem,
+  ListDoctor,
+  ListHospital,
 };

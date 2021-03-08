@@ -10,14 +10,15 @@ import DummyHospital2 from './hospital2.png';
 import DummyHospital3 from './hospital3.png';
 
 export {
-    DummyUser,
-    DummyDoctor1,
-    DummyDoctor2,
-    DummyDoctor3,
-    DummyNews1,
-    DummyNews2,
-    DummyNews3,
-    DummyHospital1,
-    DummyHospital2,
-    DummyHospital3
+  DummyUser,
+  DummyDoctor1,
+  DummyDoctor2,
+  DummyDoctor3,
+  DummyNews1,
+  DummyNews2,
+  DummyNews3,
+  DummyHospital1,
+  DummyHospital2,
+  DummyHospital3,,
 };
+

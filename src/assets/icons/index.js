@@ -10,14 +10,14 @@ import IconHospitalActive from './ic_hospital_active.svg';
 import IconStar from './ic_star.svg';
 
 export {
-    IconBackDark,
-    IconAddPhoto,
-    IconRemovePhoto,
-    IconDoctor,
-    IconDoctorActive,
-    IconMessages,
-    IconMessagesActive,
-    IconHospital,
-    IconHospitalActive,
-    IconStar,
+  IconBackDark,
+  IconAddPhoto,
+  IconRemovePhoto,
+  IconDoctor,
+  IconDoctorActive,
+  IconMessages,
+  IconMessagesActive,
+  IconHospital,
+  IconHospitalActive,
+  IconStar,
 };
