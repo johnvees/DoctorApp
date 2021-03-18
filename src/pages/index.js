@@ -5,15 +5,17 @@ import Login from './Login';
 import UploadPhoto from './UploadPhoto';
 import Doctor from './Doctor';
 import Messages from './Messages';
-import Hospitals from './Hospitals'
+import Hospitals from './Hospitals';
+import ChooseDoctor from './ChooseDoctor';
 
 export {
-    Splash, 
-    GetStarted, 
-    Register, 
-    Login, 
-    UploadPhoto, 
-    Doctor, 
-    Messages, 
-    Hospitals,
+  Splash,
+  GetStarted,
+  Register,
+  Login,
+  UploadPhoto,
+  Doctor,
+  Messages,
+  Hospitals,
+  ChooseDoctor,
 };
