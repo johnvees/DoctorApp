@@ -1,0 +1,99 @@
+New Project:
+- tentukan directory
+- pada cmd directory tersebut ketikan npx react-native init namaproject
+- pada cmd ketikan npm run android untuk mencoba menjalankan atau npx react-native run-android
+
+Upload to Repository:
+- buat repository baru pada platform repository manapun
+- masuk ke cmd directory project
+- git status
+- git init
+- git remote add origin https://
+- git status
+- git commit -m "judul"
+- git push origin master
+
+Restructure Project:
+- buat folder baru dengan nama src
+- pindahkan app.js pada folder tersebut
+- pada index.js betulkan directory import App.js nya
+
+Add React Native Library for SVG:
+- install npm add react-native-svg
+- install npm add --dev react-native-svg-transformer
+- add this code to metro-config.js
+const { getDefaultConfig } = require("metro-config");
+
+module.exports = (async () => {
+  const {
+    resolver: { sourceExts, assetExts }
+  } = await getDefaultConfig();
+  return {
+    transformer: {
+      babelTransformerPath: require.resolve("react-native-svg-transformer")
+    },
+    resolver: {
+      assetExts: assetExts.filter(ext => ext !== "svg"),
+      sourceExts: [...sourceExts, "svg"]
+    }
+  };
+})();
+
+Start The New Code:
+- pada App.js hapus semua default code dan ganti ke
+rnfes
+
+Routing React Native:
+- install npm install @react-navigation/native
+- install npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view
+- tambahkan pada index.js import 'react-native-gesture-handler';
+- tambahkan pada App.js import { NavigationContainer } from '@react-navigation/native';
+- lalu ganti kemudian tambahkan return <NavigationContainer><page/><NavigationContainter/>
+
+Stack Navigator:
+- install npm install @react-navigation/stack
+- buat folder router dan import { createStackNavigator } from '@react-navigation/stack';
+- lalu returnnya dibuat return stack navigator
+
+Slicing Bottom Navigator:
+- install bottom navigator (https://reactnavigation.org/docs/bottom-tab-navigator)
+- copy return view yang ada disana
+- membuat ./atoms./TabItem
+
+Install eslint:
+- npm install -g eslint
+- npm init
+- insert author
+- and OK
+- eslint --init
+Question:
+- style
+- javascript modules
+- react
+- no
+- browser
+- popular guide
+- airbnb
+- JSON
+- yes
+"rules" eslintrc:
+        "no-console": "off",
+        "linebreak-style": 0,
+        "global-require": 0,
+        "eslint linebreak-style": [0, "error", "windows"],
+        "no-template-curly-in-string": "off",
+        "template-curly-in-string": "off"
+settings.json:
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "editor.formatOnSave": true,
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "eslint.autoFixOnSave": true,
+    "prettier.disableLanguages": ["javascript", "javascriptreact"],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
